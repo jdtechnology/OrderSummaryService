@@ -35,7 +35,6 @@ public class JsonReader {
     }
 
     public Basket readBasket(String ref) throws IOException {
-//	    String tstring = "{\"status\":\"VALID\",\"items\":[{\"type\": \"hardware\", \"ref\": \"MINIBOX\", \"price\": \"50.00\",\"action\": \"ADD\"},{\"type\": \"subscription\", \"ref\": \"MANCHESTERTV\", \"price\": \"20.00\",\"action\": \"ADD\"},{\"type\": \"subscription\", \"ref\": \"CINEMA\", \"price\": \"10.00\",\"action\": \"REMOVE\"}]}";
 
         String tstring = retrieveJsonString(ref, true);
         InputStream is = new ByteArrayInputStream(tstring.getBytes(StandardCharsets.UTF_8));
@@ -52,7 +51,6 @@ public class JsonReader {
     }
 
     public AccountHoldings readAccount(String ref) throws IOException {
-//	    String tstring = "{\"items\": [{\"type\": \"subscription\", \"ref\": \"ENTERTAINMENT\",\"description\": \"Sky Entertainment\",\"price\": \"45.00\"},{\"type\": \"subscription\", \"ref\": \"CINEMA\",\"description\": \"Sky Cinema\",\"price\": \"10.00\"},{\"type\": \"subscription\", \"ref\": \"SPORTS\",\"description\": \"Sky Sports\",\"price\": \"18.00\"},{\"type\": \"hardware\", \"ref\": \"Q2TB\",\"description\": \"SKY Q 2TB Box\",\"price\": \"199.99\"},{\"type\": \"hardware\",\"ref\": \"TOUCHREMOTE\",\"description\": \"SKY Q Touch Remote\",\"price\": \"10.99\"}]}";
         String tstring = retrieveJsonString(ref, false);
 	    InputStream is = new ByteArrayInputStream(tstring.getBytes(StandardCharsets.UTF_8));
         try (Reader reader = new InputStreamReader(is, StandardCharsets.UTF_8)) {

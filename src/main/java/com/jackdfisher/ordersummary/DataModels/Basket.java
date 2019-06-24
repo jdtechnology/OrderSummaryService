@@ -19,6 +19,3 @@ public class Basket {
         return String.format("Status: %s, Items: %s", status, Arrays.toString(items));
     }
 }
-/*
-{"status":"VALID","items":[{"type": "hardware", "ref": "MINIBOX", "price": "50.00","action": "ADD"},{"type": "subscription", "ref": "MANCHESTERTV", "price": "20.00","action": "ADD"},{"type": "subscription", "ref": "CINEMA", "price": "10.00","action": "REMOVE"}]}
- */

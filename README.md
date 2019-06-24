@@ -1,6 +1,7 @@
 # OrderSummaryService
-Simple implementation using Spark.
-I use Maven for dependancy management.
+#### This was a timed assessment, the code could definitely be more refined
+##### Simple implementation using Spark.
+##### I use Maven for dependency management.
 
 ## Running
 Simply clone this repository, and call `./run.sh`

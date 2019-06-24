@@ -21,17 +21,6 @@ public class SummaryControllerTests {
         Thread.sleep(2000);
     }
 
-//    @BeforeEach
-//    public void startServer() throws InterruptedException {
-//
-//        Thread.sleep(2000);
-//    }
-//
-//    @AfterEach
-//    public void closeServer() {
-//        sc.stopServer();
-//    }
-
     @Test
     @DisplayName("Requesting /summary/ should give a 400 response")
     void test400ResponseStatus() throws IOException {
